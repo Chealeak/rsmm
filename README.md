@@ -1,9 +1,10 @@
-# rsmm
-Responsive Side Mobile Menu jQuery Plugin
+# Responsive Side Mobile Menu jQuery Plugin
 
-## How to Use?
-### HTML structure
+## Quick Start
 
+### HTML
+Prepare HTML structure as below (with or without submenu).
+```
 <nav class="your-class">
 	<ul>
 		<li>
@@ -28,3 +29,29 @@ Responsive Side Mobile Menu jQuery Plugin
 		</li>
 	</ul>
 </nav>
+```
+### CSS
+Include style.css into a page head.
+
+```
+<link rel="stylesheet" href="style.css">
+```
+
+### Javascript
+Include jQuery before </body> first. Then include script.js after it.
+
+```
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
+```
+
+### Initialization
+Initialize the plugin as below.
+
+```
+$('.your-class').rsmm({
+	'position' : 'fixedOnScroll', // Should your menu be fixed? Don't include this option if it is not.
+	'mobile' : 768 // Switch to mobile view breakpoint
+});
+```
