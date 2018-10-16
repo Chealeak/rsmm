@@ -50,8 +50,10 @@ Include jQuery before </body> first. Then include script.js after it.
 Initialize the plugin as below.
 
 ```
-$('.your-class').rsmm({
-	'position' : 'fixedOnScroll', // Should your menu be fixed? Don't include this option if it is not.
-	'mobile' : 768 // Switch to mobile view breakpoint
+$(document).ready(function() {
+	$('.your-class').rsmm({
+		'position' : 'fixedOnScroll', // Should your menu be fixed? Don't include this option if it is not.
+		'mobile' : 768 // Switch to mobile view breakpoint
+	});
 });
 ```
