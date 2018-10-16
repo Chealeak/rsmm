@@ -1,8 +1,8 @@
 # rsmm
 Responsive Side Mobile Menu jQuery Plugin
 
-How to Use?
-HTML structure
+## How to Use?
+### HTML structure
 
 <nav class="your-class">
 	<ul>
